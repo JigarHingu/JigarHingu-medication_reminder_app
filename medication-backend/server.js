@@ -18,6 +18,16 @@ app.use('/api/auth', authRoutes); // Authentication routes
 app.use('/api/medicines', medicineRoutes); // Medicine routes
 app.use('/api/acknowledgments/:medicineId', acknowledgmentRoutes);
 
+// Add root route
+app.get('/', (req, res) => {
+    res.send('Welcome to the Medication Reminder API! Navigate to the appropriate API endpoints.');
+});
+
+// Error handling middleware (optional, but good to have)
+app.use((req, res) => {
+    res.status(404).json({ message: 'API endpoint not found' });
+});
+
 // Connect to MongoDB
 mongoose
     .connect(process.env.MONGO_URI)
