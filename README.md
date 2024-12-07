@@ -29,7 +29,10 @@
 ## Deployment:
 
 Frontend: Vercel
+live : 
+
 Backend: Vercel
+live : https://medication-backend.vercel.app/
 
 # Setup Instructions
 
