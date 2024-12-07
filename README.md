@@ -29,7 +29,7 @@
 ## Deployment:
 
 Frontend: Vercel
-live : 
+live : https://medication-reminder-app-vusu.vercel.app/login
 
 Backend: Vercel
 live : https://medication-backend.vercel.app/
